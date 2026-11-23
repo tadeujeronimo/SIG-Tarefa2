@@ -1,0 +1,90 @@
+.raiz {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--borda-forte);
+}
+
+.barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 8px 10px;
+  background: var(--superficie-2);
+  border-bottom: 1px solid var(--borda);
+  font-size: 0.85rem;
+}
+
+.barra select,
+.barra input,
+.barra button {
+  font: inherit;
+  padding: 4px 6px;
+  border: 1px solid var(--borda-forte);
+  border-radius: 3px;
+  background: var(--superficie);
+  color: var(--texto);
+}
+
+.barra button {
+  cursor: pointer;
+}
+
+.barra button:hover {
+  background: var(--hover);
+}
+
+.busca {
+  display: flex;
+  gap: 4px;
+}
+
+.busca input {
+  width: 160px;
+}
+
+.status {
+  color: var(--texto-suave);
+}
+
+.erro {
+  color: var(--erro);
+}
+
+.area {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.legenda {
+  position: absolute;
+  left: 10px;
+  bottom: 34px;
+  z-index: 1000;
+  padding: 6px 8px;
+  background: var(--superficie);
+  border: 1px solid var(--borda-forte);
+  font-size: 0.75rem;
+  color: var(--texto);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.amostra {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  border: 1px solid var(--borda-forte);
+}
+
+.nota {
+  margin-top: 4px;
+  color: var(--texto-suave);
+}

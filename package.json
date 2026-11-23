@@ -1,0 +1,28 @@
+{
+  "name": "sig-tarefa2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mapa vetorial dos municípios do Ceará com tabela de atributos (SIG#07)",
+  "author": "Tadeu dos Santos Jerônimo <tadeus.jeronimo@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "leaflet": "1.9",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.6"
+  }
+}

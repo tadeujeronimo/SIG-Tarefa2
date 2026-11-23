@@ -1,0 +1,83 @@
+:root {
+  color-scheme: light;
+  --fundo: #ffffff;
+  --superficie: #ffffff;
+  --superficie-2: #f1f3f5;
+  --cabecalho-tabela: #eef0f2;
+  --texto: #1f2933;
+  --texto-suave: #52606d;
+  --borda: #d5d9de;
+  --borda-forte: #aab2bb;
+  --hover: #e4e7eb;
+  --link: #1d4ed8;
+  --erro: #b42318;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --fundo: #14181d;
+  --superficie: #1b2026;
+  --superficie-2: #222931;
+  --cabecalho-tabela: #222931;
+  --texto: #e4e7eb;
+  --texto-suave: #a8b3bf;
+  --borda: #2f3841;
+  --borda-forte: #46515c;
+  --hover: #2b333c;
+  --link: #7aa7ff;
+  --erro: #ff8a80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Leaflet: balão e controles seguem o tema.
+   O prefixo .leaflet-container dá prioridade sobre o CSS padrão da biblioteca. */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-container .leaflet-popup-content-wrapper,
+.leaflet-container .leaflet-popup-tip {
+  background: var(--superficie);
+  color: var(--texto);
+}
+
+.leaflet-container .leaflet-popup-close-button {
+  color: var(--texto-suave);
+}
+
+.leaflet-container .leaflet-bar a,
+.leaflet-container .leaflet-bar a:hover {
+  background-color: var(--superficie);
+  color: var(--texto);
+  border-bottom-color: var(--borda);
+}
+
+.leaflet-container .leaflet-bar {
+  border-color: var(--borda-forte);
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: color-mix(in srgb, var(--superficie) 85%, transparent);
+  color: var(--texto-suave);
+}
+
+.leaflet-container .leaflet-control-attribution a {
+  color: var(--link);
+}
